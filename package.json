@@ -1,0 +1,16 @@
+{
+  "name": "mobile-first",
+  "version": "1.0.0",
+  "description": "Código frontend de un sitio web partiendo de su wireframe, Código construido se adaptará a cualquier dispositivo del usuario",
+  "engines": {
+    "node": "20.5.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
