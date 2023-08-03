@@ -370,6 +370,7 @@ main {
     display: flex; 
     height: 326px;
     overflow-x: auto;
+    overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 
 }
