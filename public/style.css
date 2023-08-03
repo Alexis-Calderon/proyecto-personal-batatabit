@@ -368,9 +368,8 @@ main {
 }
 .plans-container--slider {
     display: flex; 
-    height: 316px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
+    height: 326px;
+    overflow-x: auto;
     scroll-snap-type: x proximity;
 
 }
@@ -379,9 +378,9 @@ main {
     scroll-snap-align: center;
     width: 70%;
     min-width: 190px;
-    max-width: 300px;
+    max-width: 250px;
     height: 250px;
-    margin: 50px 5px 0;
+    margin: 50px 10px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -398,6 +397,11 @@ main {
     padding: 6px;
     border-radius: 8px;
     color: var(--just-white);
+}
+.plan-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .plan-card--title {
     padding-top: 30px;
@@ -416,6 +420,7 @@ main {
 .plan-card--price  span {
     font-size: 1.2rem;
     font-weight: 300;
+    vertical-align: text-top;
 }
 .plan-card-saving {
     font-size: 1.2rem;
@@ -466,3 +471,6 @@ footer .left ul {
     text-decoration: none;
     color: var(--just-white);
 }
+.hideScroll::-webkit-scrollbar {
+    width: 0;
+  }
